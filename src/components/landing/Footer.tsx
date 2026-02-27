@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
+import logo from "@/assets/logo.svg";
 
 const Footer = () => (
   <footer className="border-t border-border py-12 px-6">
@@ -6,11 +7,8 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-10 mb-10">
         {/* Brand & address */}
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-7 h-7 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xs">T</span>
-            </div>
-            <span className="font-bold text-foreground">TrustMe</span>
+          <div className="mb-4">
+            <img src={logo} alt="TrustMe" className="h-7" />
           </div>
           <div className="flex items-start gap-2 text-sm text-muted-foreground mb-2">
             <MapPin size={16} className="flex-shrink-0 mt-0.5" />
@@ -64,9 +62,6 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="border-t border-border pt-6 text-center">
-        <p className="text-sm text-muted-foreground">© 2026 TrustMe. Все права защищены.</p>
-      </div>
     </div>
   </footer>
 );
