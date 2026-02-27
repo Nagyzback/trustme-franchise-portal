@@ -2,23 +2,23 @@ import { MapPin } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const regions = [
-  { name: "Москва и МО", status: "Ограниченные слоты", hot: true },
-  { name: "Санкт-Петербург", status: "Открыт набор", hot: false },
-  { name: "Казань", status: "Открыт набор", hot: false },
-  { name: "Новосибирск", status: "Открыт набор", hot: false },
-  { name: "Екатеринбург", status: "Открыт набор", hot: false },
-  { name: "Краснодар", status: "Открыт набор", hot: false },
-  { name: "Ростов-на-Дону", status: "Скоро", hot: false },
-  { name: "Самара", status: "Скоро", hot: false },
+  { name: "Астана", status: "Ограниченные слоты", hot: true },
+  { name: "Алматы", status: "Ограниченные слоты", hot: true },
+  { name: "Шымкент", status: "Открыт набор", hot: false },
+  { name: "Қарағанды", status: "Открыт набор", hot: false },
+  { name: "Атырау", status: "Открыт набор", hot: false },
+  { name: "Актобе", status: "Открыт набор", hot: false },
+  { name: "Павлодар", status: "Скоро", hot: false },
+  { name: "Усть-Каменогорск", status: "Скоро", hot: false },
 ];
 
 const RegionsSection = () => (
-  <AnimatedSection className="py-24 px-6 bg-secondary/50">
+  <AnimatedSection className="py-14 px-6 bg-secondary/50">
     <div className="max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Преимущества по регионам</h2>
+      <div className="text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">Преимущества по регионам</h2>
         <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-          Франшиза доступна в ключевых регионах России
+          Франшиза доступна в ключевых городах Казахстана
         </p>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">

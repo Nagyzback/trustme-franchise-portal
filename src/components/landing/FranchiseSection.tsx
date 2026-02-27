@@ -25,10 +25,10 @@ const cards = [
 ];
 
 const FranchiseSection = () => (
-  <AnimatedSection className="py-24 px-6">
+  <AnimatedSection className="py-14 px-6">
     <div id="franchise" className="max-w-7xl mx-auto scroll-mt-20">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Для франчайзи</h2>
+      <div className="text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">Для франчайзи</h2>
         <p className="text-muted-foreground text-lg max-w-xl mx-auto">
           Всё необходимое для успешного запуска и роста вашего бизнеса
         </p>

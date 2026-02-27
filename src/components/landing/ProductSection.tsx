@@ -11,12 +11,12 @@ const benefits = [
 ];
 
 const ProductSection = () => (
-  <AnimatedSection className="py-24 px-6 bg-secondary/50">
+  <AnimatedSection className="py-14 px-6 bg-secondary/50">
     <div id="product" className="max-w-7xl mx-auto scroll-mt-20">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         {/* Left: benefits */}
         <div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Trust Contract</h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">Trust Contract</h2>
           <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
             Платформа для безопасного управления документами и сделками. Полный контроль на каждом этапе.
           </p>

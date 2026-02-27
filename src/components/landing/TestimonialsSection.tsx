@@ -3,27 +3,27 @@ import AnimatedSection from "./AnimatedSection";
 
 const testimonials = [
   {
-    quote: "Запустили франшизу TrustMe в Казани 8 месяцев назад. Уже вышли на операционную прибыль. Поддержка от головного офиса — на высшем уровне.",
-    name: "Алексей Петров",
-    role: "Франчайзи, Казань",
+    quote: "Благодаря TrustMe мы полностью перешли на подписание договоров онлайн. Документы всегда в порядке, а при проверках у нас ни разу не возникло проблем.",
+    name: "Doctor Dent",
+    role: "Стоматологическая клиника",
   },
   {
-    quote: "Trust Contract закрывает огромную потребность рынка. Клиенты сами приходят, когда видят продукт в действии. Отличная бизнес-модель.",
-    name: "Мария Иванова",
-    role: "Франчайзи, Новосибирск",
+    quote: "Очень удобная система для работы с родителями — подписание договоров, согласий и уведомлений занимает считанные минуты. Мы значительно сэкономили время администрации.",
+    name: "KIS International School",
+    role: "Международная школа, Астана",
   },
   {
-    quote: "Прозрачная финансовая модель и сильный продукт. Команда TrustMe помогает на каждом шаге — от обучения до первых продаж.",
-    name: "Дмитрий Козлов",
-    role: "Франчайзи, Екатеринбург",
+    quote: "Работаем с туристами из разных городов Казахстана, и TrustMe позволяет безопасно заключать онлайн-сделки без необходимости личных встреч.",
+    name: "AtaTravel",
+    role: "Туристическая компания",
   },
 ];
 
 const TestimonialsSection = () => (
-  <AnimatedSection className="py-24 px-6">
+  <AnimatedSection className="py-14 px-6">
     <div id="cases" className="max-w-7xl mx-auto scroll-mt-20">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Успешные кейсы</h2>
+      <div className="text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">Успешные кейсы</h2>
         <p className="text-muted-foreground text-lg max-w-xl mx-auto">
           Отзывы наших действующих партнёров
         </p>
