@@ -1,4 +1,4 @@
-import { Target, Award, Building2 } from "lucide-react";
+import { Target, Award, Building2, Users, Globe, Calendar } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const cards = [
@@ -19,15 +19,32 @@ const cards = [
   },
 ];
 
+const stats = [
+  { icon: Building2, value: "3000+", label: "компаний" },
+  { icon: Users, value: "1,5 млн", label: "пользователей" },
+  { icon: Calendar, value: "3+", label: "года на рынке" },
+];
+
 const AboutSection = () => (
-  <AnimatedSection className="py-24 px-6" >
+  <AnimatedSection className="py-14 px-6">
     <div id="about" className="max-w-7xl mx-auto scroll-mt-20">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">О компании</h2>
+      <div className="text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">О компании</h2>
         <p className="text-muted-foreground text-lg max-w-xl mx-auto">
           TrustMe — лидер в области цифровой безопасности документооборота
         </p>
       </div>
+
+      {/* Stats */}
+      <div className="grid grid-cols-3 gap-4 mb-12 max-w-2xl mx-auto">
+        {stats.map((s) => (
+          <AnimatedSection key={s.label} className="text-center p-6 rounded-2xl border border-border bg-card shadow-card">
+            <p className="text-3xl sm:text-4xl font-extrabold text-primary mb-1">{s.value}</p>
+            <p className="text-sm text-muted-foreground">{s.label}</p>
+          </AnimatedSection>
+        ))}
+      </div>
+
       <div className="grid md:grid-cols-3 gap-8">
         {cards.map((c, i) => (
           <AnimatedSection key={c.title} delay={i * 0.1} className="group">

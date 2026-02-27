@@ -10,11 +10,11 @@ const ContactSection = () => {
   };
 
   return (
-    <AnimatedSection className="py-24 px-6">
+    <AnimatedSection className="py-14 px-6">
       <div id="contact" className="max-w-7xl mx-auto scroll-mt-20">
         <div className="gradient-primary rounded-3xl p-8 sm:p-16">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground mb-4 text-center">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary-foreground mb-4 text-center">
               Станьте партнёром TrustMe
             </h2>
             <p className="text-primary-foreground/80 text-lg text-center mb-10">

@@ -34,10 +34,10 @@ const faqs = [
 ];
 
 const FAQSection = () => (
-  <AnimatedSection className="py-24 px-6 bg-secondary/50">
+  <AnimatedSection className="py-14 px-6 bg-secondary/50">
     <div id="faq" className="max-w-3xl mx-auto scroll-mt-20">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Часто задаваемые вопросы</h2>
+      <div className="text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">Часто задаваемые вопросы</h2>
         <p className="text-muted-foreground text-lg">
           Ответы на основные вопросы потенциальных франчайзи
         </p>
