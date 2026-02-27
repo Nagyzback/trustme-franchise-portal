@@ -30,9 +30,6 @@ const AboutSection = () => (
     <div id="about" className="max-w-7xl mx-auto scroll-mt-20">
       <div className="text-center mb-10">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">О компании</h2>
-        <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-          TrustMe — лидер в области цифровой безопасности документооборота
-        </p>
       </div>
 
       {/* Stats */}
