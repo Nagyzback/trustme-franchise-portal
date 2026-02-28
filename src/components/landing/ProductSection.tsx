@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, FileText, Clock, CheckCircle, Eye, Download, MoreHorizontal } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -28,43 +28,92 @@ const ProductSection = () => {
 
           <AnimatedSection delay={0.2}>
             <div className="relative">
-              <div className="bg-card rounded-2xl border border-border shadow-card p-8">
-                <div className="flex items-center gap-2 mb-6">
+              <div className="bg-card rounded-2xl border border-border shadow-card overflow-hidden">
+                {/* Top bar */}
+                <div className="flex items-center gap-2 px-5 py-3 border-b border-border bg-secondary/50">
                   <div className="w-3 h-3 rounded-full bg-destructive/60" />
                   <div className="w-3 h-3 rounded-full bg-primary/40" />
                   <div className="w-3 h-3 rounded-full bg-primary/20" />
+                  <span className="ml-3 text-xs text-muted-foreground font-medium">TrustContract — Dashboard</span>
                 </div>
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between p-4 rounded-xl bg-secondary">
+
+                {/* Toolbar */}
+                <div className="flex items-center gap-3 px-5 py-2.5 border-b border-border">
+                  <span className="text-xs font-semibold text-foreground">Документы</span>
+                  <div className="ml-auto flex items-center gap-2">
+                    <div className="text-xs text-muted-foreground bg-secondary px-2.5 py-1 rounded">Фильтр</div>
+                    <div className="text-xs text-muted-foreground bg-secondary px-2.5 py-1 rounded">Сортировка</div>
+                  </div>
+                </div>
+
+                {/* Document list */}
+                <div className="p-4 space-y-2.5">
+                  {/* Doc row 1 */}
+                  <div className="flex items-center justify-between p-3 rounded-xl bg-secondary/70 hover:bg-secondary transition-colors">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg gradient-primary opacity-80" />
+                      <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
+                        <FileText size={14} className="text-primary-foreground" />
+                      </div>
                       <div>
-                        <div className="h-3 w-32 bg-foreground/10 rounded" />
-                        <div className="h-2 w-20 bg-foreground/5 rounded mt-1.5" />
+                        <p className="text-sm font-medium text-foreground">Договор аренды №247</p>
+                        <p className="text-[10px] text-muted-foreground mt-0.5">ТОО «Арман» · 28.02.2026</p>
                       </div>
                     </div>
-                    <div className="text-xs font-medium text-primary bg-primary-light px-3 py-1 rounded-full">{tr("product.signed")}</div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-medium text-primary bg-primary/10 px-2.5 py-1 rounded-full flex items-center gap-1">
+                        <CheckCircle size={10} /> {tr("product.signed")}
+                      </span>
+                      <MoreHorizontal size={14} className="text-muted-foreground" />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between p-4 rounded-xl bg-secondary">
+
+                  {/* Doc row 2 */}
+                  <div className="flex items-center justify-between p-3 rounded-xl bg-secondary/70">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-primary/20" />
+                      <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                        <FileText size={14} className="text-primary" />
+                      </div>
                       <div>
-                        <div className="h-3 w-40 bg-foreground/10 rounded" />
-                        <div className="h-2 w-24 bg-foreground/5 rounded mt-1.5" />
+                        <p className="text-sm font-medium text-foreground">NDA — Партнёрство</p>
+                        <p className="text-[10px] text-muted-foreground mt-0.5">ИП Касымов · 27.02.2026</p>
                       </div>
                     </div>
-                    <div className="text-xs font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">{tr("product.review")}</div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-medium text-muted-foreground bg-muted px-2.5 py-1 rounded-full flex items-center gap-1">
+                        <Clock size={10} /> {tr("product.review")}
+                      </span>
+                      <MoreHorizontal size={14} className="text-muted-foreground" />
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between p-4 rounded-xl bg-secondary">
+
+                  {/* Doc row 3 */}
+                  <div className="flex items-center justify-between p-3 rounded-xl bg-secondary/70">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-primary/30" />
+                      <div className="w-8 h-8 rounded-lg bg-primary/30 flex items-center justify-center">
+                        <FileText size={14} className="text-primary" />
+                      </div>
                       <div>
-                        <div className="h-3 w-28 bg-foreground/10 rounded" />
-                        <div className="h-2 w-16 bg-foreground/5 rounded mt-1.5" />
+                        <p className="text-sm font-medium text-foreground">Трудовой договор</p>
+                        <p className="text-[10px] text-muted-foreground mt-0.5">Алиев Д.К. · 25.02.2026</p>
                       </div>
                     </div>
-                    <div className="text-xs font-medium text-primary bg-primary-light px-3 py-1 rounded-full">{tr("product.signed")}</div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-medium text-primary bg-primary/10 px-2.5 py-1 rounded-full flex items-center gap-1">
+                        <CheckCircle size={10} /> {tr("product.signed")}
+                      </span>
+                      <MoreHorizontal size={14} className="text-muted-foreground" />
+                    </div>
                   </div>
+                </div>
+
+                {/* Bottom bar */}
+                <div className="flex items-center gap-2 px-5 py-3 border-t border-border">
+                  <button className="text-[10px] font-medium gradient-primary text-primary-foreground px-3 py-1.5 rounded-lg flex items-center gap-1">
+                    <Download size={10} /> Скачать
+                  </button>
+                  <button className="text-[10px] font-medium border border-border text-foreground px-3 py-1.5 rounded-lg flex items-center gap-1">
+                    <Eye size={10} /> Просмотр
+                  </button>
                 </div>
               </div>
               <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full rounded-2xl border border-primary/10" />
