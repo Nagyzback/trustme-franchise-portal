@@ -34,16 +34,16 @@ const ScalingSection = memo(() => {
   const { tr } = useLanguage();
 
   return (
-    <AnimatedSection className="py-10 px-6 bg-secondary/50">
+    <AnimatedSection className="px-6 pb-0 bg-secondary/50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-4">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-2">
+        <div className="text-center mb-2">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-1">
             {tr("scaling.title")}
           </h2>
           <p className="text-muted-foreground text-base">{tr("scaling.line1")}</p>
           <p className="text-muted-foreground text-base">{tr("scaling.line2")}</p>
         </div>
-        <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card" style={{ backgroundColor: "#F5F5F5" }}>
+        <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card" style={{ backgroundColor: "#F5F5F5", height: 400 }}>
           <ComposableMap
             projectionConfig={{ scale: 140, center: [50, 35] }}
             className="w-full h-auto"
