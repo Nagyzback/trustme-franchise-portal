@@ -44,8 +44,8 @@ export const t: Translations = {
     "about.stat1_label": "компаний",
     "about.stat2_value": "1,5 млн",
     "about.stat2_label": "пользователей",
-    "about.stat3_value": "3+",
-    "about.stat3_label": "года на рынке",
+    "about.stat3_value": "5+",
+    "about.stat3_label": "лет на рынке",
 
     // Product
     "product.title": "TrustContract",
@@ -206,7 +206,7 @@ export const t: Translations = {
     "about.stat1_label": "companies",
     "about.stat2_value": "1.5M",
     "about.stat2_label": "users",
-    "about.stat3_value": "3+",
+    "about.stat3_value": "5+",
     "about.stat3_label": "years on market",
 
     "product.title": "TrustContract",
@@ -357,7 +357,7 @@ export const t: Translations = {
     "about.stat1_label": "компаниялар",
     "about.stat2_value": "1,5 млн",
     "about.stat2_label": "пайдаланушылар",
-    "about.stat3_value": "3+",
+    "about.stat3_value": "5+",
     "about.stat3_label": "жыл нарықта",
 
     "product.title": "TrustContract",
@@ -508,7 +508,7 @@ export const t: Translations = {
     "about.stat1_label": "entreprises",
     "about.stat2_value": "1,5M",
     "about.stat2_label": "utilisateurs",
-    "about.stat3_value": "3+",
+    "about.stat3_value": "5+",
     "about.stat3_label": "ans sur le marché",
 
     "product.title": "TrustContract",
@@ -659,7 +659,7 @@ export const t: Translations = {
     "about.stat1_label": "empresas",
     "about.stat2_value": "1,5M",
     "about.stat2_label": "usuarios",
-    "about.stat3_value": "3+",
+    "about.stat3_value": "5+",
     "about.stat3_label": "años en el mercado",
 
     "product.title": "TrustContract",
@@ -810,7 +810,7 @@ export const t: Translations = {
     "about.stat1_label": "家公司",
     "about.stat2_value": "150万",
     "about.stat2_label": "用户",
-    "about.stat3_value": "3+",
+    "about.stat3_value": "5+",
     "about.stat3_label": "年市场经验",
 
     "product.title": "TrustContract",
@@ -961,7 +961,7 @@ export const t: Translations = {
     "about.stat1_label": "şirket",
     "about.stat2_value": "1,5M",
     "about.stat2_label": "kullanıcı",
-    "about.stat3_value": "3+",
+    "about.stat3_value": "5+",
     "about.stat3_label": "yıl piyasada",
 
     "product.title": "TrustContract",
