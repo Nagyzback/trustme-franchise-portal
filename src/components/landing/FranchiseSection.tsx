@@ -23,8 +23,8 @@ const FranchiseSection = () => {
           {cards.map((c, i) => (
             <AnimatedSection key={c.titleKey} delay={i * 0.1}>
               <div className="p-7 rounded-2xl border border-border bg-card shadow-card hover:shadow-card-hover transition-all duration-300 h-full group">
-                <div className="w-11 h-11 rounded-xl bg-primary-light flex items-center justify-center mb-5 group-hover:gradient-primary transition-all duration-300">
-                  <c.icon size={20} className="text-primary" />
+                <div className="w-11 h-11 rounded-xl bg-primary-light flex items-center justify-center mb-5 group-hover:bg-[#46A3A3] transition-all duration-300">
+                  <c.icon size={20} className="text-primary group-hover:text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{tr(c.titleKey)}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{tr(c.textKey)}</p>

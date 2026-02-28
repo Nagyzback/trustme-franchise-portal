@@ -23,7 +23,7 @@ const TechnologiesSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((c, i) => (
             <AnimatedSection key={c.titleKey} delay={i * 0.08}>
-              <div className="p-7 rounded-2xl border border-border bg-card shadow-card hover:shadow-card-hover transition-all duration-300 h-full">
+              <div className="p-7 rounded-2xl border border-border bg-gradient-to-br from-card to-[hsl(180,38%,46%,0.05)] shadow-card hover:shadow-card-hover transition-all duration-300 h-full">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-11 h-11 rounded-xl gradient-primary flex items-center justify-center">
                     <c.icon size={20} className="text-primary-foreground" />

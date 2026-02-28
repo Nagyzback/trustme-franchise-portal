@@ -38,9 +38,6 @@ const DocumentsSection = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="text-xs font-medium text-foreground border border-border rounded-lg px-4 py-2 hover:bg-secondary transition-colors w-fit">
-                  {tr("docs.learn_more")}
-                </button>
               </div>
             </AnimatedSection>
           ))}

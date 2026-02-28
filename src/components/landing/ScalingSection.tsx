@@ -10,15 +10,8 @@ import { useLanguage } from "@/i18n/LanguageContext";
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
-// ISO 3166-1 numeric codes for highlighted countries
 const highlightedCountries = new Set([
-  "398", // Kazakhstan
-  "643", // Russia
-  "860", // Uzbekistan
-  "840", // USA
-  "792", // Turkey
-  "784", // UAE
-  "682", // Saudi Arabia
+  "398", "643", "860", "840", "792", "784", "682",
 ]);
 
 interface MarkerData {
@@ -41,16 +34,16 @@ const ScalingSection = memo(() => {
   const { tr } = useLanguage();
 
   return (
-    <AnimatedSection className="py-14 px-6 bg-secondary/50">
+    <AnimatedSection className="py-10 px-6 bg-secondary/50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">
+        <div className="text-center mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-2">
             {tr("scaling.title")}
           </h2>
           <p className="text-muted-foreground text-base">{tr("scaling.line1")}</p>
           <p className="text-muted-foreground text-base">{tr("scaling.line2")}</p>
         </div>
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card" style={{ backgroundColor: "#F5F5F5" }}>
           <ComposableMap
             projectionConfig={{ scale: 140, center: [50, 35] }}
             className="w-full h-auto"
@@ -63,12 +56,12 @@ const ScalingSection = memo(() => {
                     <Geography
                       key={geo.rsmKey}
                       geography={geo}
-                      fill={isHighlighted ? "#46A3A3" : "#E5E7EB"}
+                      fill={isHighlighted ? "#46A3A3" : "#E0E0E0"}
                       stroke="#FFF"
                       strokeWidth={0.5}
                       style={{
                         default: { outline: "none" },
-                        hover: { outline: "none", fill: isHighlighted ? "#3D8F8F" : "#D1D5DB" },
+                        hover: { outline: "none", fill: isHighlighted ? "#3A9191" : "#D1D5DB" },
                         pressed: { outline: "none" },
                       }}
                     />

@@ -15,15 +15,11 @@ const Footer = () => {
             </div>
             <div className="flex items-start gap-2 text-sm text-muted-foreground mb-2">
               <MapPin size={16} className="flex-shrink-0 mt-0.5" />
-              <span>г. Астана, ул. Достык, 13</span>
+              <span>Республика Казахстан, г. Астана, ул. Достык, 13</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
               <Phone size={14} className="flex-shrink-0" />
-              <span>{tr("footer.sales")}: <a href="tel:+77078701901" className="hover:text-foreground transition-colors">+7 (707) 870-19-01</a></span>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
-              <Phone size={14} className="flex-shrink-0" />
-              <span>{tr("footer.support")}: <a href="tel:+77078701903" className="hover:text-foreground transition-colors">+7 (707) 870-19-03</a></span>
+              <a href="tel:+77075546299" className="hover:text-foreground transition-colors">+7 707 554 62 99</a>
             </div>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Mail size={14} className="flex-shrink-0" />
