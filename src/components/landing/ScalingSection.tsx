@@ -43,12 +43,12 @@ const ScalingSection = memo(() => {
           <p className="text-muted-foreground text-base">{tr("scaling.line1")}</p>
           <p className="text-muted-foreground text-base">{tr("scaling.line2")}</p>
         </div>
-        <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card" style={{ backgroundColor: "#F5F5F5", height: 400, marginTop: 0, paddingTop: 0 }}>
+        <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card" style={{ backgroundColor: "#F5F5F5", height: 400, marginTop: 0, paddingTop: 0, lineHeight: 0 }}>
           <ComposableMap
             projectionConfig={{ scale: 140, center: [50, 40] }}
             width={800}
             height={400}
-            style={{ width: "100%", height: "100%", margin: 0, padding: 0 }}
+            style={{ width: "100%", height: "100%", margin: 0, padding: 0, display: "block" }}
           >
             <Geographies geography={GEO_URL}>
               {({ geographies }) =>
