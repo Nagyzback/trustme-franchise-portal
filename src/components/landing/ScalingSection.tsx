@@ -36,19 +36,22 @@ const ScalingSection = memo(() => {
   return (
     <AnimatedSection className="px-6 pb-0 bg-secondary/50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-2">
+        <div className="text-center mb-3">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-1">
             {tr("scaling.title")}
           </h2>
           <p className="text-muted-foreground text-base">{tr("scaling.line1")}</p>
           <p className="text-muted-foreground text-base">{tr("scaling.line2")}</p>
         </div>
-        <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card" style={{ backgroundColor: "#F5F5F5", marginTop: 0, paddingTop: 0, lineHeight: 0 }}>
+        <div
+          className="max-w-5xl mx-auto mt-2 rounded-2xl overflow-hidden shadow-card"
+          style={{ backgroundColor: "#F5F5F5", height: 400, marginTop: 0, paddingTop: 0, lineHeight: 0 }}
+        >
           <ComposableMap
-            projectionConfig={{ scale: 150, center: [50, 35] }}
+            projectionConfig={{ scale: 145, center: [50, 20] }}
             width={800}
-            height={420}
-            style={{ width: "100%", height: "auto", margin: 0, padding: 0, display: "block" }}
+            height={400}
+            style={{ width: "100%", height: "100%", margin: 0, padding: 0, display: "block" }}
           >
             <Geographies geography={GEO_URL}>
               {({ geographies }) =>
@@ -63,7 +66,7 @@ const ScalingSection = memo(() => {
                       strokeWidth={0.5}
                       style={{
                         default: { outline: "none" },
-                        hover: { outline: "none", fill: isHighlighted ? "#3A9191" : "#D1D5DB" },
+                        hover: { outline: "none", fill: isHighlighted ? "#46A3A3" : "#E0E0E0" },
                         pressed: { outline: "none" },
                       }}
                     />
