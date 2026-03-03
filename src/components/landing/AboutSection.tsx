@@ -21,7 +21,6 @@ const AboutSection = () => {
     { icon: DollarSign, valueKey: "about.ach1_value", labelKey: "about.ach1_label" },
     { icon: Trophy, valueKey: "about.ach2_value", labelKey: "about.ach2_label" },
     { icon: Landmark, valueKey: "about.ach3_value", labelKey: "about.ach3_label" },
-    { icon: Users, valueKey: "about.ach4_value", labelKey: "about.ach4_label" },
   ];
 
   return (
@@ -58,7 +57,7 @@ const AboutSection = () => {
         <AnimatedSection delay={0.2}>
           <div className="rounded-2xl border border-border bg-card shadow-card p-6 sm:p-8">
             <h3 className="text-lg font-bold text-foreground mb-6 text-center">{tr("about.achievements_title")}</h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid sm:grid-cols-3 gap-4">
               {achievements.map((a) => (
                 <div key={a.labelKey} className="flex items-start gap-3 p-4 rounded-xl bg-secondary/50">
                   <div className="w-9 h-9 rounded-lg gradient-primary flex items-center justify-center flex-shrink-0 mt-0.5">
