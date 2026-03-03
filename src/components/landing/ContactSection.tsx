@@ -2,6 +2,8 @@ import { useState, FormEvent } from "react";
 import AnimatedSection from "./AnimatedSection";
 import { useLanguage } from "@/i18n/LanguageContext";
 
+const inputClass = "px-5 py-3.5 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:border-primary-foreground/40 transition-colors";
+
 const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
   const { tr } = useLanguage();
@@ -33,10 +35,11 @@ const ContactSection = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-4">
-                <input required placeholder={tr("contact.name")} className="px-5 py-3.5 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:border-primary-foreground/40 transition-colors" />
-                <input required placeholder={tr("contact.company")} className="px-5 py-3.5 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:border-primary-foreground/40 transition-colors" />
-                <input required type="tel" placeholder={tr("contact.phone")} className="px-5 py-3.5 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:border-primary-foreground/40 transition-colors" />
-                <input required placeholder={tr("contact.region")} className="px-5 py-3.5 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:border-primary-foreground/40 transition-colors" />
+                <input required placeholder={tr("contact.name")} className={inputClass} />
+                <input required placeholder={tr("contact.company")} className={inputClass} />
+                <input required type="tel" placeholder={tr("contact.phone")} className={inputClass} />
+                <input required placeholder={tr("contact.region")} className={inputClass} />
+                <input required placeholder={tr("contact.country")} className={`sm:col-span-2 ${inputClass}`} />
                 <div className="sm:col-span-2">
                   <button type="submit" className="w-full py-4 rounded-xl bg-primary-foreground text-primary font-semibold text-lg hover:bg-primary-foreground/90 transition-colors">
                     {tr("contact.submit")}
