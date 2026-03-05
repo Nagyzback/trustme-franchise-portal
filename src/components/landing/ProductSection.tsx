@@ -39,10 +39,10 @@ const ProductSection = () => {
 
                 {/* Toolbar */}
                 <div className="flex items-center gap-3 px-5 py-2.5 border-b border-border">
-                  <span className="text-xs font-semibold text-foreground">Документы</span>
+                  <span className="text-xs font-semibold text-foreground">{tr("product.dash_docs")}</span>
                   <div className="ml-auto flex items-center gap-2">
-                    <div className="text-xs text-muted-foreground bg-secondary px-2.5 py-1 rounded">Фильтр</div>
-                    <div className="text-xs text-muted-foreground bg-secondary px-2.5 py-1 rounded">Сортировка</div>
+                    <div className="text-xs text-muted-foreground bg-secondary px-2.5 py-1 rounded">{tr("product.dash_filter")}</div>
+                    <div className="text-xs text-muted-foreground bg-secondary px-2.5 py-1 rounded">{tr("product.dash_sort")}</div>
                   </div>
                 </div>
 
@@ -55,8 +55,8 @@ const ProductSection = () => {
                         <FileText size={14} className="text-primary-foreground" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-foreground">Договор аренды №247</p>
-                        <p className="text-[10px] text-muted-foreground mt-0.5">ТОО «Арман» · 28.02.2026</p>
+                        <p className="text-sm font-medium text-foreground">{tr("product.dash_doc1")}</p>
+                        <p className="text-[10px] text-muted-foreground mt-0.5">{tr("product.dash_doc1_meta")}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
@@ -74,8 +74,8 @@ const ProductSection = () => {
                         <FileText size={14} className="text-primary" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-foreground">NDA — Партнёрство</p>
-                        <p className="text-[10px] text-muted-foreground mt-0.5">ИП Касымов · 27.02.2026</p>
+                        <p className="text-sm font-medium text-foreground">{tr("product.dash_doc2")}</p>
+                        <p className="text-[10px] text-muted-foreground mt-0.5">{tr("product.dash_doc2_meta")}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
@@ -93,8 +93,8 @@ const ProductSection = () => {
                         <FileText size={14} className="text-primary" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-foreground">Трудовой договор</p>
-                        <p className="text-[10px] text-muted-foreground mt-0.5">Алиев Д.К. · 25.02.2026</p>
+                        <p className="text-sm font-medium text-foreground">{tr("product.dash_doc3")}</p>
+                        <p className="text-[10px] text-muted-foreground mt-0.5">{tr("product.dash_doc3_meta")}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
@@ -109,10 +109,10 @@ const ProductSection = () => {
                 {/* Bottom bar */}
                 <div className="flex items-center gap-2 px-5 py-3 border-t border-border">
                   <button className="text-[10px] font-medium gradient-primary text-primary-foreground px-3 py-1.5 rounded-lg flex items-center gap-1">
-                    <Download size={10} /> Скачать
+                    <Download size={10} /> {tr("product.dash_download")}
                   </button>
                   <button className="text-[10px] font-medium border border-border text-foreground px-3 py-1.5 rounded-lg flex items-center gap-1">
-                    <Eye size={10} /> Просмотр
+                    <Eye size={10} /> {tr("product.dash_preview")}
                   </button>
                 </div>
               </div>
