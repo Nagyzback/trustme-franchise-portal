@@ -593,7 +593,7 @@ export const t: Translations = {
     "about.stat3_label": "ans sur le marché",
 
     "product.title": "TrustContract",
-    "product.subtitle": "Plateforme de gestion sécurisée des documents et transactions. Contrôle total à chaque étape.",
+    "product.subtitle": "Plateforme de signature en ligne sécurisée de documents et de gestion des transactions. Contrôle total à chaque étape.",
     "product.b1": "Signature électronique à valeur juridique",
     "product.b2": "Chiffrement de niveau bancaire",
     "product.b3": "Automatisation du cycle contractuel",
