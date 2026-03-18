@@ -52,9 +52,9 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-col gap-1.5 text-xs text-muted-foreground">
-              <a href="#" className="hover:text-foreground transition-colors">{tr("footer.privacy")}</a>
-              <a href="#" className="hover:text-foreground transition-colors">{tr("footer.agreement")}</a>
-              <a href="#" className="hover:text-foreground transition-colors">{tr("footer.offer")}</a>
+              <a href="https://trustme.kz/contract/privacypolicy" className="hover:text-foreground transition-colors">{tr("footer.privacy")}</a>
+              <a href="https://trustme.kz/contract/termofuse" className="hover:text-foreground transition-colors">{tr("footer.agreement")}</a>
+              <a href="https://trustme.kz/contract/serviceAcceptablePolicy" className="hover:text-foreground transition-colors">{tr("footer.offer")}</a>
             </div>
           </div>
         </div>
