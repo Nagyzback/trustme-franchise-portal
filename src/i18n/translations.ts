@@ -1082,7 +1082,7 @@ export const t: Translations = {
     "about.stat3_label": "yıl piyasada",
 
     "product.title": "TrustContract",
-    "product.subtitle": "Güvenli belge ve anlaşma yönetimi platformu. Her aşamada tam kontrol.",
+    "product.subtitle": "Güvenli çevrimiçi belge imzalama ve anlaşma yönetimi platformu. Her aşamada tam kontrol.",
     "product.b1": "Yasal geçerliliğe sahip elektronik imza",
     "product.b2": "Banka düzeyinde veri şifreleme",
     "product.b3": "Sözleşme döngüsü otomasyonu",
