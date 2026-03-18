@@ -246,7 +246,7 @@ export const t: Translations = {
     "about.ach4_label": "signed documents via TrustMe",
 
     "product.title": "TrustContract",
-    "product.subtitle": "A platform for secure document and deal management. Full control at every stage.",
+    "product.subtitle": "A platform for secure online document signing and deal management. Full control at every stage.",
     "product.b1": "Legally binding electronic signatures",
     "product.b2": "Bank-level data encryption",
     "product.b3": "Contract cycle automation",
