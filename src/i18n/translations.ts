@@ -919,7 +919,7 @@ export const t: Translations = {
     "about.stat3_label": "年市场经验",
 
     "product.title": "TrustContract",
-    "product.subtitle": "安全文档和交易管理平台。每个阶段完全控制。",
+    "product.subtitle": "安全在线文档签署和交易管理平台。每个阶段完全控制。",
     "product.b1": "具有法律效力的电子签名",
     "product.b2": "银行级数据加密",
     "product.b3": "合同周期自动化",
