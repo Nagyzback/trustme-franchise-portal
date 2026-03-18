@@ -12,7 +12,7 @@ RUN npm run build
 
 FROM nginx:alpine
 
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
@@ -23,4 +23,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 
 CMD ["nginx", "-g", "daemon off;"]
 
-# sudo docker build --platform=linux/amd64 -t harbor.trustme.kz/trust-contract/trustmetoken-frontend:$(date +%Y.%m.%d.%H.%M) .
+# sudo docker build --platform=linux/amd64 -t registry.trustme.kz/images/frontend/trustmefranchise:$(date +%Y.%m.%d.%H.%M) .
