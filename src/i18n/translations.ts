@@ -58,7 +58,7 @@ export const t: Translations = {
 
     // Product
     "product.title": "TrustContract",
-    "product.subtitle": "Платформа для безопасного управления документами и сделками. Полный контроль на каждом этапе.",
+    "product.subtitle": "Платформа для безопасного онлайн подписания документов и управления сделками. Полный контроль на каждом этапе.",
     "product.b1": "Электронная подпись юридической силы",
     "product.b2": "Шифрование данных банковского уровня",
     "product.b3": "Автоматизация контрактного цикла",
@@ -246,7 +246,7 @@ export const t: Translations = {
     "about.ach4_label": "signed documents via TrustMe",
 
     "product.title": "TrustContract",
-    "product.subtitle": "A platform for secure document and deal management. Full control at every stage.",
+    "product.subtitle": "A platform for secure online document signing and deal management. Full control at every stage.",
     "product.b1": "Legally binding electronic signatures",
     "product.b2": "Bank-level data encryption",
     "product.b3": "Contract cycle automation",
@@ -424,7 +424,7 @@ export const t: Translations = {
     "about.ach4_label": "TrustMe арқылы құжаттарға қол қойды",
 
     "product.title": "TrustContract",
-    "product.subtitle": "Құжаттар мен мәмілелерді қауіпсіз басқаруға арналған платформа. Әр кезеңде толық бақылау.",
+    "product.subtitle": "Құжаттарды қауіпсіз онлайн қол қоюға және мәмілелерді басқаруға арналған платформа. Әр кезеңде толық бақылау.",
     "product.b1": "Заңды күші бар электрондық қолтаңба",
     "product.b2": "Банктік деңгейдегі деректерді шифрлау",
     "product.b3": "Келісімшарт циклін автоматтандыру",
@@ -593,7 +593,7 @@ export const t: Translations = {
     "about.stat3_label": "ans sur le marché",
 
     "product.title": "TrustContract",
-    "product.subtitle": "Plateforme de gestion sécurisée des documents et transactions. Contrôle total à chaque étape.",
+    "product.subtitle": "Plateforme de signature en ligne sécurisée de documents et de gestion des transactions. Contrôle total à chaque étape.",
     "product.b1": "Signature électronique à valeur juridique",
     "product.b2": "Chiffrement de niveau bancaire",
     "product.b3": "Automatisation du cycle contractuel",
@@ -756,7 +756,7 @@ export const t: Translations = {
     "about.stat3_label": "años en el mercado",
 
     "product.title": "TrustContract",
-    "product.subtitle": "Plataforma para gestión segura de documentos y transacciones. Control total en cada etapa.",
+    "product.subtitle": "Plataforma para firma segura de documentos en línea y gestión de transacciones. Control total en cada etapa.",
     "product.b1": "Firma electrónica con validez legal",
     "product.b2": "Cifrado de nivel bancario",
     "product.b3": "Automatización del ciclo contractual",
@@ -919,7 +919,7 @@ export const t: Translations = {
     "about.stat3_label": "年市场经验",
 
     "product.title": "TrustContract",
-    "product.subtitle": "安全文档和交易管理平台。每个阶段完全控制。",
+    "product.subtitle": "安全在线文档签署和交易管理平台。每个阶段完全控制。",
     "product.b1": "具有法律效力的电子签名",
     "product.b2": "银行级数据加密",
     "product.b3": "合同周期自动化",
@@ -1082,7 +1082,7 @@ export const t: Translations = {
     "about.stat3_label": "yıl piyasada",
 
     "product.title": "TrustContract",
-    "product.subtitle": "Güvenli belge ve anlaşma yönetimi platformu. Her aşamada tam kontrol.",
+    "product.subtitle": "Güvenli çevrimiçi belge imzalama ve anlaşma yönetimi platformu. Her aşamada tam kontrol.",
     "product.b1": "Yasal geçerliliğe sahip elektronik imza",
     "product.b2": "Banka düzeyinde veri şifreleme",
     "product.b3": "Sözleşme döngüsü otomasyonu",
